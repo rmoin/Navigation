@@ -22,7 +22,12 @@ The task is episodic, and in order to solve the environment, our agent must get 
 
 ### Getting Started
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+1. Clone the repository.
+```bash
+git clone https://github.com/rmoin/Navigation.git
+```
+
+2. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -32,8 +37,40 @@ The task is episodic, and in order to solve the environment, our agent must get 
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the GitHub repository, in the `Navigation/` folder, and unzip (or decompress) the file. 
+3. Place the file in the GitHub repository, in the `Navigation/` folder, and unzip (or decompress) the file. 
 
 ### Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training our own agent! 
+Follow the instructions in `Navigation.ipynb` to get started with training our own agent! We will use rich simulation environments from [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents).
+
+
+## Dependencies
+
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+1. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+	
+2. Download `python` folder from [here] (https://github.com/udacity/deep-reinforcement-learning/tree/master/python) and place in the Github repository, in the `Navigation/` folder. Now go to the `python/` folder.  Then, install several dependencies.
+```bash
+cd Navigation/python
+pip install .
+```
+
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
+```bash
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
+
+5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
+
