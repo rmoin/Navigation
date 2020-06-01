@@ -61,7 +61,7 @@ To set up your python environment to run the code in this repository, follow the
 	activate drlnd
 	```
 	
-2. Download `python` folder from [here] (https://github.com/udacity/deep-reinforcement-learning/tree/master/python) and place in the Github repository, in the `Navigation/` folder. Now go to the `python/` folder.  Then, install several dependencies.
+2. Download `python` folder from [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/python) and place in the Github repository, in the `Navigation/` folder. Now go to the `python/` folder.  Then, install several dependencies.
 ```bash
 cd Navigation/python
 pip install .
